@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Play', sans-serif;
+  padding: 30px;
+}
+
+html.html_overflow-hidden {
+  overflow: hidden;
+  margin: 0;
+}
