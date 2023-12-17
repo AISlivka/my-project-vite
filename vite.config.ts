@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from "node:url"
 
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer"
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 import vitePluginImp from "vite-plugin-imp"
@@ -12,6 +13,7 @@ export default defineConfig({
   base: process.env.BASE_URL || "/",
   plugins: [
     vue(),
+    ViteImageOptimizer(),
     svgLoader({
       defaultImport: "component",
     }),
@@ -69,8 +71,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "@/comp": fileURLToPath(new URL("./src/components", import.meta.url)),
-      "@/api": fileURLToPath(new URL("./src/api", import.meta.url)),
     },
   },
 })
