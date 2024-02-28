@@ -6,7 +6,7 @@
   <div class="image">
     <iconCloseBold />
   </div>
-  <div>тестовая SVG</div>
+  <div>{{ $t("testSvg") }}</div>
 </template>
 
 <script lang="ts" setup>

@@ -1,12 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router"
 import { ROUTE_NAMES } from "@/constants/RouteNames.ts"
-import Home from "@/components/pages/HomePage.vue"
+import HomePage from "@/components/pages/HomePage.vue"
+import TestPage from "@/components/pages/TestPage.vue"
 
 export const routes = [
   {
     path: "/",
     name: ROUTE_NAMES.HOME_PAGE,
-    component: Home,
+    component: HomePage,
+    meta: {
+      title: "MyProject",
+      description: "MyProject",
+    },
+  },
+  {
+    path: "/test-page",
+    name: ROUTE_NAMES.TEST_PAGE,
+    component: TestPage,
     meta: {
       title: "MyProject",
       description: "MyProject",

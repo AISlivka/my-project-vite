@@ -1,6 +1,8 @@
-import { I18nLocale } from '@/assets/locales/I18nLocale.ts';
+import { I18nLocale } from "@/assets/locales/I18nLocale.ts"
 
 export const en: I18nLocale = {
-  title: 'English Title',
-  switchLang: 'Switch lang',
-};
+  title: "English Title",
+  switchLang: "Switch lang",
+  testSvg: "Test SVG",
+  testPage: "test page",
+}
